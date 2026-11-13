@@ -1,0 +1,1 @@
+"""One-tool MCP server."""

@@ -1,0 +1,3 @@
+knowledge/*.md -text
+app/reference_manual_2024.md -text
+tests_extension/fixtures/*.md -text

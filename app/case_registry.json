@@ -1,0 +1,208 @@
+{
+  "schema": 1,
+  "families": {
+    "maintenance_case": {
+      "documents": {
+        "maintenance-history": {
+          "sha256": "878ece875f39b28b177e572db7c0b0b1da5963c1643a5d9d393495f5ba51c4d2",
+          "policy_version": "2026.1"
+        },
+        "maintenance-manual": {
+          "sha256": "8aa660ca30308da02347bdacb2f914508b250a1075c667123d5f4f56c038209c",
+          "policy_version": "2026.1"
+        }
+      },
+      "plans": {
+        "alert": [
+          {
+            "document_id": "maintenance-history",
+            "content_sha256": "cedf7f638f42173167c810fa8ad8ff53ad37747aaa72b4904c34e7f9abdb9fd0",
+            "heading": "歷史線索"
+          },
+          {
+            "document_id": "maintenance-manual",
+            "content_sha256": "27eaf8c84a6e17ccd391dd15a1bacba5559f5c4ba4bdbbd2a78637ebaba9fdd7",
+            "heading": "適用性與資格核對"
+          },
+          {
+            "document_id": "maintenance-manual",
+            "content_sha256": "418cf3d5951c030482755c657f87fb2d82c6fc1eca0728f14bacb6c6fd775ed2",
+            "heading": "執行結論的限制"
+          },
+          {
+            "document_id": "maintenance-history",
+            "content_sha256": "aed5911a840a4e593326467ad30390f702505c3dda97c2e012ecf78cba02ca74",
+            "heading": "資訊缺口與轉交"
+          },
+          {
+            "document_id": "maintenance-manual",
+            "content_sha256": "92f8578d5d935064c87df7a0639849833f1435170cb401a02637bd558785e6c8",
+            "heading": "教材範圍"
+          }
+        ],
+        "handover": [
+          {
+            "document_id": "maintenance-history",
+            "content_sha256": "fe5abc45e9c42ffe2b0335fa38eb0881e6063d19c44df81ab72eebb482634826",
+            "heading": "本次狀態與摘要範圍"
+          },
+          {
+            "document_id": "maintenance-history",
+            "content_sha256": "cedf7f638f42173167c810fa8ad8ff53ad37747aaa72b4904c34e7f9abdb9fd0",
+            "heading": "歷史線索"
+          },
+          {
+            "document_id": "maintenance-manual",
+            "content_sha256": "27eaf8c84a6e17ccd391dd15a1bacba5559f5c4ba4bdbbd2a78637ebaba9fdd7",
+            "heading": "手冊適用性與資格"
+          },
+          {
+            "document_id": "maintenance-manual",
+            "content_sha256": "418cf3d5951c030482755c657f87fb2d82c6fc1eca0728f14bacb6c6fd775ed2",
+            "heading": "待確認的執行限制"
+          },
+          {
+            "document_id": "maintenance-history",
+            "content_sha256": "aed5911a840a4e593326467ad30390f702505c3dda97c2e012ecf78cba02ca74",
+            "heading": "待補資訊與轉交"
+          }
+        ],
+        "verify_inputs": [
+          {
+            "document_id": "maintenance-manual",
+            "content_sha256": "27eaf8c84a6e17ccd391dd15a1bacba5559f5c4ba4bdbbd2a78637ebaba9fdd7",
+            "heading": "處理前核對項目"
+          },
+          {
+            "document_id": "maintenance-manual",
+            "content_sha256": "418cf3d5951c030482755c657f87fb2d82c6fc1eca0728f14bacb6c6fd775ed2",
+            "heading": "目前適用限制"
+          },
+          {
+            "document_id": "maintenance-manual",
+            "content_sha256": "c9306fd9557fc6a39fc3a30a6ed1c40ff1b9f1497955d8c3075823fc7d660a94",
+            "heading": "授權判讀人員"
+          }
+        ],
+        "delegate": [
+          {
+            "document_id": "maintenance-manual",
+            "content_sha256": "418cf3d5951c030482755c657f87fb2d82c6fc1eca0728f14bacb6c6fd775ed2",
+            "heading": "目前適用限制"
+          },
+          {
+            "document_id": "maintenance-manual",
+            "content_sha256": "c9306fd9557fc6a39fc3a30a6ed1c40ff1b9f1497955d8c3075823fc7d660a94",
+            "heading": "授權判讀人員"
+          },
+          {
+            "document_id": "maintenance-manual",
+            "content_sha256": "27eaf8c84a6e17ccd391dd15a1bacba5559f5c4ba4bdbbd2a78637ebaba9fdd7",
+            "heading": "處理前核對項目"
+          }
+        ],
+        "summary_structure": [
+          {
+            "document_id": "maintenance-history",
+            "content_sha256": "fe5abc45e9c42ffe2b0335fa38eb0881e6063d19c44df81ab72eebb482634826",
+            "heading": "接手摘要記錄項目"
+          }
+        ],
+        "history_requirements": [
+          {
+            "document_id": "maintenance-history",
+            "content_sha256": "cedf7f638f42173167c810fa8ad8ff53ad37747aaa72b4904c34e7f9abdb9fd0",
+            "heading": "歷史案件的適用界線"
+          },
+          {
+            "document_id": "maintenance-history",
+            "content_sha256": "aed5911a840a4e593326467ad30390f702505c3dda97c2e012ecf78cba02ca74",
+            "heading": "本次待補與查核"
+          }
+        ]
+      }
+    },
+    "support_case": {
+      "documents": {
+        "support-case": {
+          "sha256": "12340c1ab9a75d1b041d3cb9c7ed3969d743f0fcf3c15966b2236a1ef5683eed",
+          "policy_version": "2026.1"
+        },
+        "support-contract": {
+          "sha256": "6b344559c46a1b8cd77165a7a5192e326f363ad40368924db4b3d0d28147b8a6",
+          "policy_version": "2026.1"
+        },
+        "support-approval": {
+          "sha256": "80dcde03226c0b83a03ba8a8e496a568f2ac9e93291bac7a42b0768093f94576",
+          "policy_version": "2026.1"
+        }
+      },
+      "plans": {
+        "options": [
+          {
+            "document_id": "support-case",
+            "content_sha256": "be2a14d5680064ce26a5823a4cba09c3afc340ded40261e385ef744675c09d3a",
+            "heading": "客戶主張"
+          },
+          {
+            "document_id": "support-case",
+            "content_sha256": "47dcea0b468c6581e4dc71e68b643a9bc4de56faae238c5fbc854ff0502ffe4c",
+            "heading": "案件證據缺口"
+          },
+          {
+            "document_id": "support-contract",
+            "content_sha256": "bfce246ba30ee9d3c57d325e317b85a037a047c871bd497bda672d7a946fd47c",
+            "heading": "合約核對"
+          },
+          {
+            "document_id": "support-contract",
+            "content_sha256": "117beb3d8c3fa5debc3a88b545eb1e55ebb5c8a1fc5b4b536d1652aa0c17579b",
+            "heading": "責任與退款判定限制"
+          },
+          {
+            "document_id": "support-contract",
+            "content_sha256": "ea3c7db589707eb813496c111ce17886c3fabb776562030d84d0d1ba65f27cb9",
+            "heading": "可呈核的選項"
+          },
+          {
+            "document_id": "support-approval",
+            "content_sha256": "5f020ba8d4f4cff902973efd1d87a756008292ad7fa994114e89e1cbcc3db9f1",
+            "heading": "核准前的限制"
+          }
+        ],
+        "approval": [
+          {
+            "document_id": "support-case",
+            "content_sha256": "be2a14d5680064ce26a5823a4cba09c3afc340ded40261e385ef744675c09d3a",
+            "heading": "案件事實與主張"
+          },
+          {
+            "document_id": "support-case",
+            "content_sha256": "47dcea0b468c6581e4dc71e68b643a9bc4de56faae238c5fbc854ff0502ffe4c",
+            "heading": "證據缺口"
+          },
+          {
+            "document_id": "support-contract",
+            "content_sha256": "bfce246ba30ee9d3c57d325e317b85a037a047c871bd497bda672d7a946fd47c",
+            "heading": "合約適用核對"
+          },
+          {
+            "document_id": "support-approval",
+            "content_sha256": "5f020ba8d4f4cff902973efd1d87a756008292ad7fa994114e89e1cbcc3db9f1",
+            "heading": "處理限制"
+          },
+          {
+            "document_id": "support-approval",
+            "content_sha256": "d56e6b7d18b7a1ac346964c83c43f4bc7cd58b04692181babe5e813a52599906",
+            "heading": "呈核材料與主管待決"
+          },
+          {
+            "document_id": "support-approval",
+            "content_sha256": "03427174b6c260c575959566378f8f35b2bf2378476ec8f6a12dab2752417984",
+            "heading": "同仁接續流程"
+          }
+        ]
+      }
+    }
+  }
+}

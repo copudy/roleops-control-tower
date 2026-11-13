@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "scope": "reviewed synthetic access-policy facets; unknown wording fails closed",
+  "documents": {
+    "crm-access": {
+      "policy_version": "2026.1",
+      "source_sha256": "7b4c4734be428ba1850c98bd49fb2f01f183056584d8229c24579f3e139cb99f",
+      "facets": {
+        "conditions": [
+          [
+            "5d2312b15535cbc18d0e43e17c258e4d2ea15da6521de6c8121059597caa8111"
+          ]
+        ],
+        "workflow": [
+          [
+            "5d2312b15535cbc18d0e43e17c258e4d2ea15da6521de6c8121059597caa8111"
+          ],
+          [
+            "366181d93ee9988aea00a4264f5d1283b8c26d820c203c549805c3abc60986e3"
+          ],
+          [
+            "46f22f7f33abd97f7c13ce9aea12bfc876fcb71280e09aefabb958edc59edbf9"
+          ]
+        ],
+        "approval": [
+          [
+            "5d2312b15535cbc18d0e43e17c258e4d2ea15da6521de6c8121059597caa8111"
+          ]
+        ],
+        "provisioning": [
+          [
+            "46f22f7f33abd97f7c13ce9aea12bfc876fcb71280e09aefabb958edc59edbf9"
+          ]
+        ],
+        "credentials": [
+          [
+            "b3b91eaa466ae35902bdc415c28b6130382cb49d48045b2e375accaf01e73047"
+          ]
+        ],
+        "limits": [
+          [
+            "366181d93ee9988aea00a4264f5d1283b8c26d820c203c549805c3abc60986e3"
+          ]
+        ]
+      }
+    }
+  }
+}

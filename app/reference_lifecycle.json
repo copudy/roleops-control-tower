@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "purpose": "Synthetic archive for lifecycle exclusion demonstration; never indexed or sent to model",
+  "archived_documents": [
+    {
+      "document_id": "maintenance-manual",
+      "policy_version": "2024.1",
+      "effective_from": "2024-01-01",
+      "effective_to": "2025-12-31",
+      "lifecycle_status": "archived",
+      "allowed_roles": [
+        "maintenance",
+        "supervisor"
+      ],
+      "allowed_departments": [
+        "維修部"
+      ],
+      "allowed_job_titles": [
+        "維修工程師",
+        "維修主管"
+      ],
+      "scope": "maintenance",
+      "path": "app/reference_manual_2024.md",
+      "sha256": "f92adb4c15d22414f07463aa7b40891abbc18bf4345e0345c98ce42d210b81b3"
+    }
+  ]
+}

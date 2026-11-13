@@ -1,0 +1,164 @@
+{
+  "policy": "isolated-synthetic-demo-20261019",
+  "documents": {
+    "crm-access": {
+      "sha256": "7b4c4734be428ba1850c98bd49fb2f01f183056584d8229c24579f3e139cb99f",
+      "policy_version": "2026.1",
+      "lifecycle_status": "current",
+      "scope": "policy",
+      "allowed_roles": [
+        "support",
+        "it",
+        "supervisor"
+      ],
+      "body": "CRM 系統存取申請：員工需說明工作目的與使用期間，由部門主管核准。助理只能建立待核准申請，不能直接授予權限。CRM 帳密不可分享。核准後由資訊單位依核准內容開通。\n"
+    },
+    "operations-report": {
+      "sha256": "3ca08ae8b57ae47506bb9da72a7d0c33438460f28af06f62d83cbf27aea89575",
+      "policy_version": "2026.9",
+      "lifecycle_status": "current",
+      "scope": "operations",
+      "allowed_roles": [
+        "supervisor"
+      ],
+      "body": "公司九月營運月報（合成資料）：客訴案件增加 15%，平均回覆時間由 8 小時增加至 12 小時，交接漏件 6 件。可評估知識更新與交接檢查流程是否一致；僅提供觀察及待驗證假設，不代替經營決策。財務報表系統申請仍需主管核准。\n"
+    },
+    "support-handover": {
+      "sha256": "68208472491c9aa272439b626c50acbd6bde6e97051d4b50b00427f0472ffb26",
+      "policy_version": "2026.1",
+      "lifecycle_status": "current",
+      "scope": "handover",
+      "allowed_roles": [
+        "support",
+        "supervisor"
+      ],
+      "body": "前任客服專員交接工作資料：一、未結案件清單；二、重點客戶聯絡窗口；三、每日交班檢查表；四、已核准退款紀錄；五、常見客訴 FAQ。資料為合成教材，不包含真實個資。\n",
+      "allowed_departments": [
+        "客服部"
+      ],
+      "allowed_job_titles": [
+        "客服專員",
+        "客服主管"
+      ]
+    },
+    "support-sop": {
+      "sha256": "ec194a48e19a66a11e83ce83e5eeb5989a270b0b5cdfe30c6ceb434f353a7b1a",
+      "policy_version": "2026.1",
+      "lifecycle_status": "current",
+      "scope": "support",
+      "allowed_roles": [
+        "support",
+        "supervisor"
+      ],
+      "body": "客服客訴流程：先確認案件編號及客戶問題，記錄問題類型與處理時限。退款需求轉交主管核准，未核准不得承諾退款。每天於交班前更新 CRM 案件狀態。\n"
+    },
+    "it-sop": {
+      "sha256": "e83d50f95407e18b29765df35452a7177916e93d24cadca20edd49ea7dcab203",
+      "policy_version": "2026.1",
+      "lifecycle_status": "current",
+      "scope": "it",
+      "allowed_roles": [
+        "it",
+        "supervisor"
+      ],
+      "body": "資訊支援 SOP：確認錯誤發生時間、trace_id 與服務範圍。MCP Timeout 先查申請識別碼，結果不明時使用相同防重複鍵重試。避免以不同鍵重送造成重複申請。\n"
+    },
+    "support-contract": {
+      "policy_version": "2026.1",
+      "lifecycle_status": "current",
+      "scope": "support",
+      "allowed_roles": [
+        "support",
+        "supervisor"
+      ],
+      "allowed_departments": [
+        "客服部"
+      ],
+      "allowed_job_titles": [
+        "客服專員",
+        "客服主管"
+      ],
+      "sha256": "6b344559c46a1b8cd77165a7a5192e326f363ad40368924db4b3d0d28147b8a6",
+      "body": "合約查核教材：設備序號、交付與保固日期、服務範圍、例外條款及責任界定須逐項確認。本案合約原件與完整工單未取得，因此不能判定全額退款或損失賠償。可呈核的選項是補齊證據後請主管依適用制度決定處理；不得填入未記載的金額或承諾。\r\n"
+    },
+    "support-approval": {
+      "policy_version": "2026.1",
+      "lifecycle_status": "current",
+      "scope": "support",
+      "allowed_roles": [
+        "support",
+        "supervisor"
+      ],
+      "allowed_departments": [
+        "客服部"
+      ],
+      "allowed_job_titles": [
+        "客服專員",
+        "客服主管"
+      ],
+      "sha256": "80dcde03226c0b83a03ba8a8e496a568f2ac9e93291bac7a42b0768093f94576",
+      "body": "客服須先核對案件事實、客戶主張、合約／保固與完整工單。未核准不得承諾退款。呈核材料應含事實、缺口、政策支持的選項、主管待決事項及附件來源。此合成制度未提供核決金額層級；不得猜測。由同仁核對後送公司既有簽辦管道，本平台不自動送簽或退款。\r\n"
+    },
+    "support-case": {
+      "policy_version": "2026.1",
+      "lifecycle_status": "current",
+      "scope": "support",
+      "allowed_roles": [
+        "support",
+        "supervisor"
+      ],
+      "allowed_departments": [
+        "客服部"
+      ],
+      "allowed_job_titles": [
+        "客服專員",
+        "客服主管"
+      ],
+      "sha256": "12340c1ab9a75d1b041d3cb9c7ed3969d743f0fcf3c15966b2236a1ef5683eed",
+      "body": "案件 CS-DEMO-01：客戶陳述設備兩次停機、影響營運，要求全額退款。尚未提供完整工單、設備序號、合約與營運損失佐證。以上停機與損失為客戶主張，原因、責任與退款資格待查。案件沒有直接串接 CRM 即時資料。\r\n"
+    },
+    "maintenance-history": {
+      "policy_version": "2026.1",
+      "lifecycle_status": "current",
+      "scope": "maintenance",
+      "allowed_roles": [
+        "maintenance",
+        "supervisor"
+      ],
+      "allowed_departments": [
+        "維修部"
+      ],
+      "allowed_job_titles": [
+        "維修工程師",
+        "維修主管"
+      ],
+      "sha256": "878ece875f39b28b177e572db7c0b0b1da5963c1643a5d9d393495f5ba51c4d2",
+      "body": "合成歷史案件 H1 曾有相似告警；當時原因依該案證據確認，不能推定本次相同。接手摘要應分開記錄本次已知狀態、手冊適用性、歷史線索與資訊缺口。需補型號、版本、完整告警與現場差異，再交授權維修人員查核；本平台不自動派工。\r\n"
+    },
+    "maintenance-manual": {
+      "policy_version": "2026.1",
+      "lifecycle_status": "current",
+      "scope": "maintenance",
+      "allowed_roles": [
+        "maintenance",
+        "supervisor"
+      ],
+      "allowed_departments": [
+        "維修部"
+      ],
+      "allowed_job_titles": [
+        "維修工程師",
+        "維修主管"
+      ],
+      "sha256": "8aa660ca30308da02347bdacb2f914508b250a1075c667123d5f4f56c038209c",
+      "body": "合成設備教材 M2：只供判讀，不控制設備。處理再次告警前須核對型號、手冊版本、告警代碼、現場狀態與人員資格。適用性或資格未確認時，不提供執行結論。須交具相應授權的維修人員依正式手冊判讀。此教材沒有真實設備操作指令。\r\n"
+    }
+  },
+  "prompt_hashes": [
+    "a3b231b13d8c21389d3966a13bb772d140de29850ec376cbd3015b9192d69716",
+    "e53b7bb353080d4ef3b5412d99d296bc92225a753188084c82acfe3ef01cdd29",
+    "527844f326f48a72c6c65eb7762dde719ec513f71521fde43496d324e5941bce"
+  ],
+  "tool_sha256": "9a9bad826db316250d0f69f9db482b79a49061a56a2c3cc2cf7a1f72a5f36b47",
+  "scope": "Only engineer-owned immutable synthetic corpus; no real company data"
+}
