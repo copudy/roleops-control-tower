@@ -54,19 +54,15 @@ EMBED_PROVIDER=default GENERATION_PROVIDER=bedrock PYTHONUTF8=1 python -m pytest
 | [test_approval_repair.py](../tests_extension/test_approval_repair.py) | 審核流程 |
 | [test_maintenance_dashboard.py](../tests_extension/test_maintenance_dashboard.py) | 維運介面與資料呈現 |
 
-## 已有驗證紀錄
+## 驗證摘要
 
-**2026-11-13 首發檢查（A）**：公開基線提交為 [47e9efe](https://github.com/copudy/roleops-control-tower/commit/47e9efef8d267e6222b2e130aec5f4c7253ea10b)，105 個檔案。私有發布紀錄保留 Windows Python 3.12 乾淨副本的 209 個測試、48 個子測試通過紀錄，以及 6 筆 MCP 棄用警告。本機首頁、自檢與版本查詢回應 HTTP 200；Gitleaks 8.30.1 掃描零筆命中。
+| 範圍 | 證據與結果 | 適用邊界 |
+| --- | --- | --- |
+| 首發本機基線（A） | 2026-11-13，[47e9efe](https://github.com/copudy/roleops-control-tower/commit/47e9efef8d267e6222b2e130aec5f4c7253ea10b)：Windows Python 3.12 乾淨副本記錄 209 個測試、48 個子測試通過；首頁、自檢與版本查詢 HTTP 200；Gitleaks 8.30.1 零命中。 | 使用合成資料及服務替身，有 6 筆 MCP 棄用警告；此為該基線的歷史結果。 |
+| AWS 指定情境（B） | 作者操作並回報客服／IT 指引、CRM 申請與審核回查、越權及管理員展示通過。 | 原收據與環境識別保留於私有專案；公開程式及測試可供檢查契約。 |
+| 近期完整重跑（E） | 2026-11-25 未取得完整測試結果。 | 預設 E5 初始化缺少 model.onnx；切換本機設定後仍遇 Windows FAISS 原生載入異常。上方指令已列出供應商設定，環境相容性仍待排除。 |
 
-這是首發時的結果；以下另記本次文件更新的檢查。
-
-**2026-11-25 文件更新（A）**：更新 README，新增架構、展示與驗證三份指南；42 個相對連結存在性、Markdown 指令框配對與 Git 差異格式檢查通過；Gitleaks 8.30.1 對本次四份文件掃描零筆命中。
-
-**本次測試重跑未完成（E）**：直接執行測試時預設 E5 初始化尋找未提供的 model.onnx，測試因此失敗；切換本機供應商設定後，執行環境又出現 FAISS 載入的 Windows 原生異常，未取得完整測試結果。上方已補列測試供應商設定。本次僅更新公開文件，沒有更動應用程式；本次結果與 11 月 13 日首發驗證分開記錄。
-
-**AWS 展示驗收（B）**：專題作者已回報客服／IT 指引、CRM 申請與審核回查、越權與管理員展示通過。逐次操作的原收據、環境 ID 及私有維運資料保留於私有專案，公開讀者可由本 repo 的程式與測試檢查契約。
-
-**目前運行狀態（E）**：此 repo 沒有提供持續在線的 AWS 展示網址。本次文件更新沒有操作 AWS 或呼叫真實模型，沒有新增正式環境驗收結論。
+[專題展示影片](https://drive.google.com/file/d/1rquCmsrJ6von0V3GhVpVN7F95xZCSd9a/view?usp=sharing)呈現錄製時的成果。本 repo 未提供持續在線的 AWS 展示網址；本機契約測試與錄影不能作為即時雲端健康或效能證據。
 
 ## 已知限制與後續方向
 

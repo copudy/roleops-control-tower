@@ -1,0 +1,15 @@
+title = "Codex shared release safety"
+[extend]
+useDefault = true
+
+[[rules]]
+id = "codex-groq-token"
+description = "Groq token"
+regex = '''\bgsk_[A-Za-z0-9]{20,}\b'''
+keywords = ["gsk_"]
+
+[[rules]]
+id = "codex-private-key"
+description = "Private key header"
+regex = '''-----BEGIN (?:[A-Z0-9]+ )?PRIVATE KEY-----'''
+keywords = ["PRIVATE KEY"]
