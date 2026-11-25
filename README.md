@@ -8,7 +8,7 @@ RoleOps 是 AWS 雲端工程師培訓的實作專題，整合 **角色導向助�
 
 ## 成果展示
 
-**[觀看專題展示影片（Google Drive）](https://drive.google.com/file/d/1rquCmsrJ6von0V3GhVpVN7F95xZCSd9a/view?usp=sharing)**
+**[觀看專題展示影片（Google Drive）](https://drive.google.com/file/d/1rquCmsrJ6von0V3GhVpVN7F95xZCSd9a/view?usp=sharing)**　建議按住 **Ctrl**（Mac：**⌘**）點擊，或用滑鼠中鍵，以新分頁觀看。
 
 影片為專題錄製成果；本 repo 提供公開作品版程式與本機操作方式。可先觀看影片，再依下方案例、架構與程式入口了解設計。
 
