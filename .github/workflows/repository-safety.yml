@@ -1,0 +1,27 @@
+name: Repository Safety
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened, ready_for_review]
+permissions:
+  contents: read
+concurrency:
+  group: repository-safety-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+jobs:
+  scan:
+    name: Repository Safety / scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout trusted base only
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Scan all incoming commit trees without executing PR code
+        env:
+          SAFETY_BASE: ${{ github.event.pull_request.base.sha }}
+          SAFETY_HEAD: ${{ github.event.pull_request.head.sha }}
+          GH_TOKEN: ${{ github.token }}
+        run: python3 .github/safety/ci_scan.py
